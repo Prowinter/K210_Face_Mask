@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"temp_warning\startup_stm32f103x6.o"
+"temp_warning\myiic.o"
+"temp_warning\main.o"
+"temp_warning\gpio.o"
+"temp_warning\tim.o"
+"temp_warning\usart.o"
+"temp_warning\stm32f1xx_it.o"
+"temp_warning\stm32f1xx_hal_msp.o"
+"temp_warning\stm32f1xx_hal_gpio_ex.o"
+"temp_warning\stm32f1xx_hal_tim.o"
+"temp_warning\stm32f1xx_hal_tim_ex.o"
+"temp_warning\stm32f1xx_hal.o"
+"temp_warning\stm32f1xx_hal_rcc.o"
+"temp_warning\stm32f1xx_hal_rcc_ex.o"
+"temp_warning\stm32f1xx_hal_gpio.o"
+"temp_warning\stm32f1xx_hal_dma.o"
+"temp_warning\stm32f1xx_hal_cortex.o"
+"temp_warning\stm32f1xx_hal_pwr.o"
+"temp_warning\stm32f1xx_hal_flash.o"
+"temp_warning\stm32f1xx_hal_flash_ex.o"
+"temp_warning\stm32f1xx_hal_exti.o"
+"temp_warning\stm32f1xx_hal_uart.o"
+"temp_warning\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Temp_Warning\Temp_Warning.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Temp_Warning.map" -o Temp_Warning\Temp_Warning.axf
